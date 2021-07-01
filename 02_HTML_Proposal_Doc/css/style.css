@@ -1,19 +1,168 @@
 
 
-body {
-background-color: #fef2c2;   
+html, body {
 font-family:'Open Sans', sans-serif;
 color:#302005;
+/*background-image: linear-gradient(#FFFFFF, #fef2c2) */
+background-color: #bfe6ff;
+}
+
+
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.sidenav .toc{
+  color: #fff;
+  text-align: center;
+  border: 1px solid #bfe6ff;
+  border-radius: 25px;
+}
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 355px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Style page content */
+.main {
+  margin-left: 355px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+
+
+
+
+.aside .primary-header {
+  text-align: center;
+}
+
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+
+.primary-logo{
+  line-height: 30px;
+  line-height: 2.14285714rem;
+  margin-top: 31px;
+  margin-top: 2.21428571rem;
+  margin-bottom: 33px;
+  margin-bottom: 2.35714286rem;
+  padding-left: 30px;
+  padding-left: 2.14285714rem;
+  padding-right: 30px;
+  padding-right: 2.14285714rem;
 }
 
 .navbar h2{
-  font-size: 50px;
+  font-size: 40px;
+  border-bottom:1px solid #CCC;
+  text-align:center;
 }
 
-.navbar .menu li{
-  border: 1px solid #555;
+
+.max-width{
+  max-width: 500px;
 }
 
+
+.overview a{
+  border-bottom: 0;
+  padding: 0;
+  display: inline-block;
+  color: #666;
+}
+
+a{
+  background: 0 0;
+  text-decoration: none;
+  transition: all .15s linear;
+}
+
+a::before{
+  text-align: center;
+}
+
+.overview li{
+  counter-increment: lesson;
+  margin-bottom: .85714286rem;
+  padding-left: 2.85714286rem;
+}
+
+.overview{
+  list-style: none;
+}
+
+.overview li::before{
+  content: "";
+  display: table;
+}
+
+::before, ::after{
+  box-sizing: border-box;
+}
+
+.overview a::before{
+  border-radius: 50%;
+  content: counter(lesson);
+  font-size: .92857143rem;
+  height: 2rem;
+  line-height: 2rem;
+  margin: -.14285714rem .71428571rem .07142857rem -2.85714286rem;
+  padding-top: .07142857rem;
+  width: 2rem;
+  text-align: center;
+  font-weight: 300;
+  transition: all .15s linear;
+  float: left;
+  background-color: #cecfd5;
+  color: #fff;
+}
+
+.overview a:hover::before{
+  background-color: #9799a7;
+}
+
+.overview li::after{
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.overview li:hover a{
+  color:orange;
+}
+
+.overview li a:focus{
+  color:orange;
+}
+
+.article figure{
+  margin-top: 100px;
+}
 
 
 
@@ -25,6 +174,11 @@ margin-left: auto;
 margin-right: auto;
 }
 
+/* Main-section styling */
+ h2{
+  font-size: 40px;
+  border-bottom:1px solid #CCC;
+}
 
 
 
